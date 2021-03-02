@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Optional;
 
-import static com.sukhorukova.dev.httpserver.Constants.*;
+import static com.sukhorukova.dev.httpserver.util.Constants.*;
 
 @Log4j
 public class ServletsContainer {

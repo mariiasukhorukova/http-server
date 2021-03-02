@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
-import static com.sukhorukova.dev.httpserver.Constants.*;
+import static com.sukhorukova.dev.httpserver.util.Constants.*;
 
 @Log4j
 @Data

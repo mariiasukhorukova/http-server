@@ -1,4 +1,4 @@
-package com.sukhorukova.dev.httpserver;
+package com.sukhorukova.dev.httpserver.util;
 
 import java.util.Locale;
 

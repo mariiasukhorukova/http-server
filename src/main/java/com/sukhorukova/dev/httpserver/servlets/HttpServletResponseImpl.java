@@ -10,7 +10,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.*;
 
-import static com.sukhorukova.dev.httpserver.Constants.DEFAULT_LOCALE;
+import static com.sukhorukova.dev.httpserver.util.Constants.DEFAULT_LOCALE;
 
 
 @Data
