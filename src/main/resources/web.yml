@@ -1,0 +1,5 @@
+servlet-mapping:
+  - class: com.sukhorukova.dev.httpserver.servlets.InfoServlet
+    url: /info
+  - class: com.sukhorukova.dev.httpserver.servlets.SystemServlet
+    url: /systems
