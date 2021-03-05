@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Optional;
+import java.util.*;
 
 import static com.sukhorukova.dev.httpserver.util.Constants.*;
 
@@ -109,11 +106,11 @@ public class ServletsContainer {
 
         Object servletMappingObject = yamlParser.getResultMap().get(SERVLET_MAPPING);
 
-        if (servletMappingObject instanceof ArrayList) {
-            ArrayList<?> servletMappingList = ((ArrayList) servletMappingObject);
+        if (servletMappingObject instanceof List) {
+            List<?> servletMappingList = ((ArrayList) servletMappingObject);
             Optional<String> result = servletMappingList.stream()
-                    .filter(obj -> obj instanceof HashMap)
-                    .map(obj -> (HashMap<String, String>) obj)
+                    .filter(obj -> obj instanceof Map)
+                    .map(obj -> (Map<String, String>) obj)
                     .filter(mapping -> mapping.get(URL).equals(url))
                     .map(mapping -> mapping.get(CLASS))
                     .findFirst();
